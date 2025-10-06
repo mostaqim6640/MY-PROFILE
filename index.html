@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mostaqim Hossain — Software Engineer</title>
+  <meta name="description" content="Mostaqim Hossain — building reliable, scalable web apps and delightful user experiences." />
+  <meta property="og:title" content="Mostaqim Hossain — Software Engineer" />
+  <meta property="og:description" content="I build reliable, scalable web applications and intuitive user experiences. Open to engineering and product collaborations." />
+  <meta property="og:image" content="images/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Mostaqim Hossain</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Hi, I'm <span class="accent">Mostaqim Hossain</span></h1>
+          <p class="lead">Software Engineer • Full‑stack Developer — I build reliable, scalable web applications and intuitive user experiences.</p>
+          <p>
+            <a class="btn" href="#work">See my work</a>
+            <a class="btn outline" href="#contact">Contact me</a>
+          </p>
+        </div>
+        <div class="hero-photo" aria-hidden="false">
+          <!-- Place your profile photo at personal-site/images/profile.jpg -->
+          <img src="images/profile.jpg" alt="Mostaqim Hossain" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <div class="grid">
+        <div>
+          <p>I’m a software engineer focused on building reliable, scalable web applications and delightful user experiences. I enjoy turning product ideas into polished products by working across frontend, backend, and cloud infrastructure. Open to engineering and product collaborations.</p>
+        </div>
+        <div>
+          <ul class="meta">
+            <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+            <li><strong>Availability:</strong> Open to work</li>
+            <li><strong>Email:</strong> hello@example.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section soft">
+      <div class="container">
+        <h2>Selected Work</h2>
+        <div class="projects">
+          <article class="project">
+            <h3>Realtime Collaboration App</h3>
+            <p>A production web app with realtime APIs and a responsive UI. Focused on low-latency updates and strong UX.</p>
+            <a class="link" href="#">Live →</a>
+          </article>
+
+          <article class="project">
+            <h3>Observability Platform</h3>
+            <p>Reliability tooling and monitoring work that reduced incidents and improved alerting accuracy.</p>
+            <a class="link" href="#">Case study →</a>
+          </article>
+
+        </div>
+
+        <!-- Gallery -->
+        <h3 style="margin-top:1.5rem">Portfolio Gallery</h3>
+        <div class="gallery" aria-label="Portfolio images">
+          <img data-id="1" src="https://picsum.photos/id/1011/600/400" alt="Project screenshot 1">
+          <img data-id="2" src="https://picsum.photos/id/1025/600/400" alt="Project screenshot 2">
+          <img data-id="3" src="https://picsum.photos/id/1035/600/400" alt="Project screenshot 3">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="blog" class="section container">
+      <h2>Recent Writing</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>How I approach product design</h3>
+          <p>Notes on process, rapid prototyping, and measuring outcomes.</p>
+          <a class="link" href="#">Read →</a>
+        </article>
+        <article class="project">
+          <h3>Engineering for scale</h3>
+          <p>Lessons learned building reliable systems in production.</p>
+          <a class="link" href="#">Read →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section soft">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="projects">
+          <article class="project">
+            <p>“Working with Your Name transformed how we think about product. Delivered ahead of schedule and above expectations.”</p>
+            <p class="meta">— Manager, Acme Corp</p>
+          </article>
+          <article class="project">
+            <p>“A pragmatic engineer with a design eye. Highly recommended.”</p>
+            <p class="meta">— Founder, Startup</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>If you'd like to work together, send me a message.</p>
+      <form class="contact-form" action="#" onsubmit="handleContact(event)">
+        <label>
+          <span class="label">Your email</span>
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+        <label>
+          <span class="label">Message</span>
+          <textarea name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+        </label>
+        <p>
+          <button class="btn" type="submit">Send</button>
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
