@@ -1,7 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-      <section id="about" class="section container">
+      <section id="about" class=      </div>
+    </section>
+
+    <section id="gallery" class="section soft">
+      <div class="container">
+        <h2 data-aos="fade-up">Photo Gallery</h2>
+        <div class="gallery" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-item">
+            <img src="images/profile.jpg" alt="Mostaqim Hossain" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <h3>Profile Photo</h3>
+              </div>
+            </div>
+          </div>
+          <!-- We'll add more photos here once we have them from Facebook -->
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section container">tion container">
       <h2>About</h2>
       <div class="grid">
         <div>
@@ -32,6 +52,9 @@
   <meta property="og:image" content="images/profile.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -49,17 +72,25 @@
   <main>
     <section class="hero" id="home">
       <div class="container hero-grid">
-        <div class="hero-copy">
+        <div class="hero-copy" data-aos="fade-right">
           <h1>Hi, I'm <span class="accent">Mostaqim Hossain</span></h1>
           <p class="lead">Computer Science & Engineering Student at North South University • Full‑stack Developer — Passionate about JavaScript, Web Development, and learning new technologies.</p>
-          <p>
-            <a class="btn" href="#work">See my work</a>
-            <a class="btn outline" href="#contact">Contact me</a>
-            <a class="btn outline" href="https://www.linkedin.com/in/mostaqim-hossain/" target="_blank" rel="noopener">LinkedIn Profile</a>
-          </p>
+          <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+            <a class="btn" href="#work">
+              <i class="fas fa-code"></i>
+              See my work
+            </a>
+            <a class="btn outline" href="#contact">
+              <i class="fas fa-envelope"></i>
+              Contact me
+            </a>
+            <a class="btn outline" href="https://www.facebook.com/shuvo.mostaqimhossain/" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+              Facebook
+            </a>
+          </div>
         </div>
-        <div class="hero-photo" aria-hidden="false">
-          <!-- Place your profile photo at personal-site/images/profile.jpg -->
+        <div class="hero-photo" data-aos="fade-left" aria-hidden="false">
           <img src="images/profile.jpg" alt="Mostaqim Hossain" />
         </div>
       </div>
@@ -205,5 +236,24 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Initialize AOS animations
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+    
+    // Update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('light');
+      themeToggle.textContent = document.documentElement.classList.contains('light') ? '🌙' : '☀️';
+    });
+  </script>
 </body>
 </html>
