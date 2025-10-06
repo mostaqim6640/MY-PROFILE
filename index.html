@@ -1,7 +1,29 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+      <section id="about" class="section container">
+      <h2>About</h2>
+      <div class="grid">
+        <div>
+          <p>I'm a passionate Computer Science & Engineering student at Ahsanullah University of Science and Technology (AUST), currently in my final year. I have a strong foundation in web development with JavaScript and modern web technologies. I enjoy creating interactive web applications and am always eager to learn and implement new technologies.</p>
+          <h3>Education</h3>
+          <p>BSc in Computer Science & Engineering<br>
+          Ahsanullah University of Science and Technology (AUST)<br>
+          2020 - Present</p>
+          <h3>Skills</h3>
+          <p>JavaScript • Node.js • React.js • Web Development • Git • Problem Solving</p>
+        </div>
+        <div>
+          <ul class="meta">
+            <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+            <li><strong>Education:</strong> AUST CSE</li>
+            <li><strong>Availability:</strong> Open to opportunities</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mostaqim-hossain/" target="_blank" rel="noopener">mostaqim-hossain</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/mostaqim6640" target="_blank" rel="noopener">mostaqim6640</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mostaqim Hossain — Software Engineer</title>
   <meta name="description" content="Mostaqim Hossain — building reliable, scalable web apps and delightful user experiences." />
@@ -29,10 +51,11 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <h1>Hi, I'm <span class="accent">Mostaqim Hossain</span></h1>
-          <p class="lead">Software Engineer • Full‑stack Developer — I build reliable, scalable web applications and intuitive user experiences.</p>
+          <p class="lead">Computer Science & Engineering Student at AUST • Full‑stack Developer — Passionate about JavaScript, Web Development, and learning new technologies.</p>
           <p>
             <a class="btn" href="#work">See my work</a>
             <a class="btn outline" href="#contact">Contact me</a>
+            <a class="btn outline" href="https://www.linkedin.com/in/mostaqim-hossain/" target="_blank" rel="noopener">LinkedIn Profile</a>
           </p>
         </div>
         <div class="hero-photo" aria-hidden="false">
@@ -60,45 +83,61 @@
 
     <section id="work" class="section soft">
       <div class="container">
-        <h2>Selected Work</h2>
+        <h2>Experience & Projects</h2>
         <div class="projects">
           <article class="project">
-            <h3>Realtime Collaboration App</h3>
-            <p>A production web app with realtime APIs and a responsive UI. Focused on low-latency updates and strong UX.</p>
-            <a class="link" href="#">Live →</a>
+            <h3>Academic & Personal Projects</h3>
+            <p>Currently working on various academic projects as part of my CSE curriculum at AUST. Focused on web development and software engineering principles.</p>
           </article>
 
           <article class="project">
-            <h3>Observability Platform</h3>
-            <p>Reliability tooling and monitoring work that reduced incidents and improved alerting accuracy.</p>
-            <a class="link" href="#">Case study →</a>
+            <h3>Web Development</h3>
+            <p>Experience with JavaScript, Node.js, and React.js. Building responsive and interactive web applications with modern tools and frameworks.</p>
           </article>
 
         </div>
 
-        <!-- Gallery -->
-        <h3 style="margin-top:1.5rem">Portfolio Gallery</h3>
-        <div class="gallery" aria-label="Portfolio images">
-          <img data-id="1" src="https://picsum.photos/id/1011/600/400" alt="Project screenshot 1">
-          <img data-id="2" src="https://picsum.photos/id/1025/600/400" alt="Project screenshot 2">
-          <img data-id="3" src="https://picsum.photos/id/1035/600/400" alt="Project screenshot 3">
+        <h3 style="margin-top:1.5rem">Skills & Technologies</h3>
+        <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+          <div class="skill-category">
+            <h4>Programming Languages</h4>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML5 & CSS3</li>
+              <li>C++</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h4>Web Technologies</h4>
+            <ul>
+              <li>Node.js</li>
+              <li>React.js</li>
+              <li>Web Development</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h4>Tools & Platforms</h4>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
         </div>
 
       </div>
     </section>
 
-    <section id="blog" class="section container">
-      <h2>Recent Writing</h2>
+    <section id="education" class="section container">
+      <h2>Education</h2>
       <div class="projects">
         <article class="project">
-          <h3>How I approach product design</h3>
-          <p>Notes on process, rapid prototyping, and measuring outcomes.</p>
-          <a class="link" href="#">Read →</a>
-        </article>
-        <article class="project">
-          <h3>Engineering for scale</h3>
-          <p>Lessons learned building reliable systems in production.</p>
-          <a class="link" href="#">Read →</a>
+          <h3>BSc in Computer Science & Engineering</h3>
+          <p>Ahsanullah University of Science and Technology (AUST)<br>
+          2020 - Present</p>
+          <p>Focusing on computer science fundamentals, software engineering, and web development.</p>
         </article>
       </div>
     </section>
@@ -121,18 +160,26 @@
 
     <section id="contact" class="section container">
       <h2>Contact</h2>
-      <p>If you'd like to work together, send me a message.</p>
-      <form class="contact-form" action="#" onsubmit="handleContact(event)">
+      <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+      
+      <div class="social-links" style="margin-bottom: 2rem;">
+        <p>
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mostaqim-hossain/" target="_blank" rel="noopener">linkedin.com/in/mostaqim-hossain</a><br>
+          <strong>GitHub:</strong> <a href="https://github.com/mostaqim6640" target="_blank" rel="noopener">github.com/mostaqim6640</a>
+        </p>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
         <label>
           <span class="label">Your email</span>
           <input type="email" name="email" required placeholder="you@example.com">
         </label>
         <label>
           <span class="label">Message</span>
-          <textarea name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+          <textarea name="message" rows="6" required placeholder="I'd love to hear about your project or opportunity..."></textarea>
         </label>
         <p>
-          <button class="btn" type="submit">Send</button>
+          <button class="btn" type="submit">Send Message</button>
         </p>
       </form>
     </section>
@@ -141,7 +188,11 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Your Name — Built with care.</p>
+      <p>© <span id="year"></span> Mostaqim Hossain — Computer Science Student at AUST</p>
+      <p class="social-icons">
+        <a href="https://www.linkedin.com/in/mostaqim-hossain/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">LinkedIn</a> •
+        <a href="https://github.com/mostaqim6640" target="_blank" rel="noopener" aria-label="GitHub Profile">GitHub</a>
+      </p>
     </div>
   </footer>
 
